@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +13,82 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator-app{
+  background-color: #121314;
+  padding: 15px;
+  border-radius: 5px;
+}
+#display{
+  text-align: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calcBtnContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:5px;
+  height: 400px;
+  width: 360px;
 }
+
+#zero{
+  grid-column: auto/ span 2;
+}
+
+#equals{
+  grid-row: auto/ span 2;
+}
+
+button{
+  border: 1px solid white;
+  font-size: 2rem;
+}
+
+button:hover{
+  background-color: #7ab2c2;
+}
+
+button:active{
+  background-color: #196479;
+}
+
+#equals {
+  background-color: #2aa6c9;
+}
+#equals:hover {
+  background-color: #4eadc7;
+}
+#equals:active {
+  background-color: #4391a7;
+}
+
+#deleteBtn{
+  background-color: #be8787;
+}
+#deleteBtn:hover{
+  background-color: #c4a1a1;
+}
+#deleteBtn:active{
+  background-color: #a58d8d;
+}
+
+#clear{
+  background-color: #c94343;
+}
+#clear:hover{
+  background-color: #ce6363;
+}
+#clear:active{
+  background-color: #9b3939;
+}
+
+.symbolBtn{
+  background-color: #c98f43;
+}
+.symbolBtn:hover{
+  background-color: #c99d63;
+}
+.symbolBtn:active{
+  background-color: #aa7939;
+}
+
+
